@@ -1,1 +1,2 @@
-Zajęcia z podstaw programowania były wykonywane w Visual Studio w języku C#
+# Podstawy Programowania
+Zajęcia były wykonywane w Visual Studio w języku C#
