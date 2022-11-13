@@ -1,1 +1,1 @@
-Zadaniem projektu było zliczanie pól figur geometrycznych
+Zadaniem projektu było zliczanie pól figur płaskich i geometrycznych
