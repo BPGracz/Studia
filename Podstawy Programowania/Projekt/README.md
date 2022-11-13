@@ -1,1 +1,1 @@
-Witam w projekcie
+Zadaniem projektu było zliczanie pól figur geometrycznych
