@@ -1,8 +1,8 @@
 # Podstawy Programowania
 Zajęcia były wykonywane w Visual Studio w języku C#
 
-## Otwieranie plików
-Aby go uruchomić należy pobrać spakowany projekt i wypakować. Zainstalować Visual Studio, a następnie uruchomić z niego plik o rozszerzeniu *.sln*. Stamtąd można już uruchomić projekt.
+## Uruchamianie programu
+Aby go uruchomić należy pobrać i wypakować program (laboratorium/projekt). Zainstalować Visual Studio, a następnie uruchomić z niego plik o rozszerzeniu *.sln*. Stamtąd można już uruchomić projekt.
 
 ## Laboratoria
 Odbywały się przez I semestr I roku.
