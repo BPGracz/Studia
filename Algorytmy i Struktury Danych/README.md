@@ -1,2 +1,2 @@
 # Algorytmy i Struktury Danych
-Laboratoria były wykonywane Intelij w języku Java.
+Laboratoria były wykonywane InteliJ w języku Java.
