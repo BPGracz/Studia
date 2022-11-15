@@ -1,5 +1,5 @@
 # Wprowadzenie Do Algorytmiki
-Zajęcia były wykonywane w programie JavaBlock, który używa schematów blokowych do zobrazowania działania kodu.
+Zajęcia były wykonywane w programie JavaBlock, który używa schematów blokowych do zobrazowania działania kodu. Zajęcia się odbywały podczas II semestru.
 
 ## Instalacja JavaBlock
 Należy pobrać spakowane na górze archiwum *Javablock*, wypakować i zainstalować.
