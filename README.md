@@ -1,2 +1,2 @@
 # Studia
-Materiały i prace z czasów mojej edukacji na studiach informatycznych
+Wybrane materiały i prace z czasów mojej edukacji na studiach informatycznych.
