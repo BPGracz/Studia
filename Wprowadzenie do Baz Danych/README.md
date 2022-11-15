@@ -1,2 +1,2 @@
 # Wprowadzenie do Baz Danych
-Laboratoria i projekt były wykonywane w pgAdmin w PostgreSQL i odbywały się w IV semestrze.
+Laboratoria były wykonywane w pgAdmin w PostgreSQL. Projekt za to był wykonany w MySQL i z wykorzystaniem HTML i PHP. Zajęcia odbywały się w IV semestrze.
