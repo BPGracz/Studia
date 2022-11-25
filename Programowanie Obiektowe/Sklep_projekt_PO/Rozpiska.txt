@@ -1,0 +1,7 @@
+Każda klasa przedmiotu rozszerza klase Main.
+
+To porównania ze sobą objectów czy sa tej samej klasy uzyłem equals.
+
+Użyłem try-catch do wyłapywania liter zamiast cyfr które użytkownik wprowadza.
+
+Aby móc zapisywać w tablicy objecty wyorzystałem this.

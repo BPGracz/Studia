@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="BPGracz" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="208.44202" posY="-194.42046" zoom="4"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="120.0" posY="-230.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="120.0" posY="170.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="120.0" posY="-140.0"/>
+        <content>a=ReadNumber("Wprowadź a");	;	</content>
+        <comment>"Wprowadź a";	a ;	</comment>
+        <connect ID="4"/>
+        <io array="0" inputType="0" ioType="2" message="Wprowadź a" variable="a"/>
+      </block>
+      <block id="4" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="120.0" posY="-70.0"/>
+        <content>b=ReadNumber("Wprowadź b");	;	</content>
+        <comment>"Wprowadź b";	b ;	</comment>
+        <connect ID="12"/>
+        <io array="0" inputType="0" ioType="2" message="Wprowadź b" variable="b"/>
+      </block>
+      <block id="5" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-10.0" posY="30.0"/>
+        <content>c=0</content>
+        <connect ID="11"/>
+      </block>
+      <block id="6" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-150.0" posY="30.0"/>
+        <content>b&lt;=0</content>
+        <connect ID="10" value="true"/>
+        <connect ID="8" value="false"/>
+      </block>
+      <block id="7" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-260.0" posY="-70.0"/>
+        <content>b--&#13;;	c+=a</content>
+        <connect ID="9"/>
+      </block>
+      <block id="8" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-260.0" posY="30.0"/>
+        <content> </content>
+        <connect ID="7"/>
+      </block>
+      <block id="9" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-70.0" posY="-70.0"/>
+        <content> </content>
+        <connect ID="11"/>
+      </block>
+      <block id="10" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-150.0" posY="170.0"/>
+        <content>Writeln("" + (getValueOf(c)));	;	</content>
+        <comment>c</comment>
+        <connect ID="2"/>
+        <io ioType="1" message="" messageSuffix="" newLine="true" variable="c"/>
+      </block>
+      <block id="11" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-70.0" posY="30.0"/>
+        <content> </content>
+        <connect ID="6"/>
+      </block>
+      <block id="12" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="120.0" posY="30.0"/>
+        <content>a&gt;b</content>
+        <connect ID="5" value="true"/>
+        <connect ID="13" value="false"/>
+      </block>
+      <block id="13" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="230.0" posY="30.0"/>
+        <content>c=0</content>
+        <connect ID="19"/>
+      </block>
+      <block id="14" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="390.0" posY="30.0"/>
+        <content>a&lt;=0</content>
+        <connect ID="18" value="true"/>
+        <connect ID="16" value="false"/>
+      </block>
+      <block id="15" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="480.0" posY="-80.0"/>
+        <content>a--&#13;;	c+=b</content>
+        <connect ID="17"/>
+      </block>
+      <block id="16" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="480.0" posY="30.0"/>
+        <content> </content>
+        <connect ID="15"/>
+      </block>
+      <block id="17" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="290.0" posY="-80.0"/>
+        <content> </content>
+        <connect ID="19"/>
+      </block>
+      <block id="18" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="390.0" posY="170.0"/>
+        <content>Writeln("" + (getValueOf(c)));	;	</content>
+        <comment>c</comment>
+        <connect ID="2"/>
+        <io ioType="1" message="" messageSuffix="" newLine="true" variable="c"/>
+      </block>
+      <block id="19" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="290.0" posY="30.0"/>
+        <content> </content>
+        <connect ID="14"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

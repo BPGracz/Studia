@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: mariadb106.server754863.nazwa.pl:3306
+-- Wersja serwera: 10.6.7-MariaDB-log
+-- Wersja PHP: 7.2.24-0ubuntu0.18.04.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Baza danych: `server754863`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `bdp_placowki`
+--
+
+CREATE TABLE `bdp_placowki` (
+  `id_placowki` int(11) NOT NULL,
+  `nazwa` varchar(30) NOT NULL,
+  `adres` varchar(30) NOT NULL,
+  `miasto` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin2;
+
+--
+-- Zrzut danych tabeli `bdp_placowki`
+--
+
+INSERT INTO `bdp_placowki` (`id_placowki`, `nazwa`, `adres`, `miasto`) VALUES
+(1, 'Poczta Polska w Sopoćkowie', 'Tadeusza Kościuszki 2', 'Sopoćkowo'),
+(2, 'Filia UP nr 1', 'Al. Niepodległości 724', 'Sopoćkowo');
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
+--
+-- Indeksy dla tabeli `bdp_placowki`
+--
+ALTER TABLE `bdp_placowki`
+  ADD PRIMARY KEY (`id_placowki`);
+
+--
+-- AUTO_INCREMENT dla zrzuconych tabel
+--
+
+--
+-- AUTO_INCREMENT dla tabeli `bdp_placowki`
+--
+ALTER TABLE `bdp_placowki`
+  MODIFY `id_placowki` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;

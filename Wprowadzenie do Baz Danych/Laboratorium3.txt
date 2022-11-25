@@ -1,0 +1,23 @@
+1.
+SELECT nazwa, cena, stan FROM produkty ORDER BY cena ASC LIMIT 1;
+
+2.
+SELECT idklienta FROM nagsprzedaz WHERE zaplacono = 'tak' AND datasp > '2021-03-20';
+
+3.
+
+4.
+
+5.
+SELECT sum(cena * ilosc) FROM pozsprzedaz NATURAL JOIN produkty
+
+6.
+SELECT klienci.nazwa, nrfaktury, sum(cena * ilosc) FROM klienci NATURAL JOIN nagsprzedaz NATURAL JOIN pozsprzedaz JOIN produkty USING (idproduktu)
+GROUP BY klienci.nazwa, nrfaktury
+HAVING sum(cena * ilosc) > 774.6485106382978723
+ORDER BY nrfaktury
+
+7.
+SELECT nazwa, 'Klient' AS co_nazwa FROM klienci
+UNION
+SELECT nazwa, 'Produkt' AS co_nazwa FROM produkty

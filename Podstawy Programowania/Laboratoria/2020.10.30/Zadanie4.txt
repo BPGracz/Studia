@@ -1,0 +1,27 @@
+using Microsoft.VisualBasic;
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Int32 a,b;
+            Int32[,] tab1 = new Int32 [4,6];
+            Random los = new Random();
+            for (a=0 ; a<4 ; a++)
+            {
+                for (b=0 ; b <6 ; b++)
+                {
+                    tab1[a,b] = los.Next(100, 999);
+                    Console.Write(tab1[a,b]+" ");
+                   
+                };
+                Console.WriteLine();
+            };
+            Console.ReadKey(true);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.exe
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.deps.json
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.runtimeconfig.json
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.runtimeconfig.dev.json
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.dll
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\bin\Debug\netcoreapp3.1\Zad6.pdb
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.csprojAssemblyReference.cache
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.AssemblyInfoInputs.cache
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.AssemblyInfo.cs
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.csproj.CoreCompileInputs.cache
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.dll
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.pdb
+C:\Users\BPGracz\Desktop\VS 6.11.2020\Zad6\Zad6\Zad6\obj\Debug\netcoreapp3.1\Zad6.genruntimeconfig.cache

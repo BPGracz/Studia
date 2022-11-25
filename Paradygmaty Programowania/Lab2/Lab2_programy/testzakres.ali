@@ -1,0 +1,38 @@
+V "GNAT Lib v8"
+M P W=b
+P ZX
+
+RN
+RV SPARK_05
+
+U testzakres%b		testzakres.adb		ecbd1115 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.io%s		g-io.adb		g-io.ali
+
+D ada.ads		20190927120446 76789da1 ada%s
+D a-comlin.ads		20190927120446 4aa66568 ada.command_line%s
+D gnat.ads		20190927120446 fd2ad2f1 gnat%s
+D g-io.ads		20190927120446 9f0d3ab2 gnat.io%s
+D system.ads		20190927120446 32a08138 system%s
+D testzakres.adb	20211022142602 39164ecf testzakres%b
+X 1 ada.ads
+16K9*Ada 20e8 6|1r6 1r28
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 6|1w10 1r32
+X 3 gnat.ads
+34K9*GNAT 37e9 6|2r6 2r19
+X 4 g-io.ads
+41K14*IO 91e12 6|2w11 2r24
+59U14*Put 6|23s5
+68U14*Put 6|22s5
+77U14*New_Line 6|24s5
+X 6 testzakres.adb
+4U11*testZakres 4b11 35l5 35t15
+6i3 x{integer}
+12U12 Proc1 12b12 30l7 30t12 33s3
+14i5 x{integer} 21r9
+16U15 Proc2 16b15 26l8 26t13 29s5
+18i5 y{integer} 21m5 23r9
+

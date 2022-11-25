@@ -1,0 +1,62 @@
+Zadanie 1
+
+D:\AStudent\Bartosz Parszczyński\programy>gfortran Fdzielniki.f90 -o Fdzielniki
+
+D:\AStudent\Bartosz Parszczyński\programy>dir
+ Volume in drive D is Dane_studentow
+ Volume Serial Number is D461-F284
+
+ Directory of D:\AStudent\Bartosz Parszczyński\programy
+
+08-10-2021  15:30    <DIR>          .
+08-10-2021  15:30    <DIR>          ..
+08-10-2021  15:16               324 Cdzielniki.c
+08-10-2021  15:30            46 169 Fdzielniki.exe
+08-10-2021  15:16               295 Fdzielniki.f90
+08-10-2021  15:16               900 trojkat.java
+               4 File(s)         47 688 bytes
+               2 Dir(s)  20 616 409 088 bytes free
+
+D:\AStudent\Bartosz Parszczyński\programy>Fdzielniki.exe
+ Jakie N?
+8
+ Dzielniki liczby           8 to:
+           2
+           4
+ Nietrywialnych podzielnikow jest           2
+
+D:\AStudent\Bartosz Parszczyński\programy>
+
+*** Zmienna "liczDzielniki" jest zadeklarowana w programie ***
+
+D:\AStudent\Bartosz Parszczyński\programy>gfortran Fdzielniki.f90 -o Fdzielniki
+
+D:\AStudent\Bartosz Parszczyński\programy>Fdzielniki.exe
+ Jakie N?
+8
+ Dzielniki liczby           8 to:
+           2
+           4
+ Nietrywialnych podzielnikow jest  1701710994
+
+D:\AStudent\Bartosz Parszczyński\programy>
+
+*** Kod działa ale podaje inny wynik niż poprzednio. Fortran jednak nie wyrzuca błędu, ale przez zmianę nazwy zmiennej powoduje błąd obliczeń. Pobiera złe dane. Początek nazwy zmiennejma znaczenie. ***
+
+D:\AStudent\Bartosz Parszczyński\programy>gcc Cdzielniki.c -o Cdzielniki
+
+D:\AStudent\Bartosz Parszczyński\programy>Cdzielniki.exe
+Jakie N? 8
+Dzielniki liczby 8 to:  2,  4,
+ Nietrywialnych podzielnikow jest 2
+D:\AStudent\Bartosz Parszczyński\programy>
+
+*** Język C jest bardziej wrażliwy na zmiany nazw zmiennych, ponieważ program podaje błąd i się nie wykonuje. W Fortranie się wykona lecz błędnie. ***
+
+*** W Fortramie warunek wykonywania pętli, deklaracje zmiennej i inkrementacje zapisuje się po przecinku jedna po drugim, a w C wyznacza się je w nawiasie i oddziela średnikiem. Fortram nie korzysta z nawiasów klamrowych dla instrukcji pętpli, a język C tak. Warunek w Fortranie jest deklarowany w nawiasie ale najpierw jest podowane dzialanie a potem zmienne na których ma być wykonane działanie na koniec warunek. C ma podejscie klasycznie jak w matematyce cos przez cos i warunek. W Fortranie instrukcja if-a zaczyna sie po słowie then, a w C jest otwierany nawias {}. ***
+
+*** Do pobierania danych użytkownika w Fortranie służy read a w C scanf. Do wyświetlania jest podobne słowo ale z małą różnicą Fortran ma print, a C printf ***
+
+--------------------------------------------------------------------
+Zadanie 2
+

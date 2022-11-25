@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="BPGracz" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="10.0" posY="0.0" zoom="4"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-10.0" posY="-380.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-10.0" posY="150.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-10.0" posY="-200.0"/>
+        <content>function czyJestKopcem(abc) {&#13;;	    dlugosc = abc.length&#13;;	    jestKopcem = true&#13;;	    for(k = 1; k &lt; dlugosc; k++) {&#13;;	        if (2 * k &gt;= dlugosc)&#13;;	            return true&#13;;	        jestKopcem = abc[k] &gt;= abc[2*k]&#13;;	        if (2 * k + 1 &gt;= dlugosc)&#13;;	            return jestKopcem&#13;;	        jestKopcem = jestKopcem &amp;&amp; abc[k] &gt;= abc[2 * k + 1]&#13;;	        if (!jestKopcem)&#13;;	            return false&#13;;	    }&#13;;	    return true&#13;;	}</content>
+        <connect ID="4"/>
+      </block>
+      <block id="4" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-10.0" posY="20.0"/>
+        <content>lista = [0, 50, 30, 15, 19, 20, 10, 5, 2]  // kopiec&#13;;	//lista = [0, 50, 30, 15, 40, 20, 10, 5, 2] // NIE kopiec&#13;;	if (czyJestKopcem(lista))&#13;;	    Writeln("jest kopcem")&#13;;	else&#13;;	    Writeln("nie jest kopcem")</content>
+        <connect ID="2"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

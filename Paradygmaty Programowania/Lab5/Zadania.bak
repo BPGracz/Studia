@@ -1,0 +1,2 @@
+#lang racket
+(define jest_na_liscie elt, lista)(first)

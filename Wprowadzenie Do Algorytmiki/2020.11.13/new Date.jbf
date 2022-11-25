@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="BPGracz" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="33.221153" posY="60.09964" zoom="4"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-610.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="510.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-340.0"/>
+        <content>teraz = new Date()&#13;;	lista = []&#13;;	&#13;;	function Klasa(x, y, data, rekrutacja)&#13;;	{this.imię = x&#13;;	this.nazwisko = y&#13;;	this.dataU = data&#13;;	this.rekrutacja = data&#13;;	&#13;;	this.okWiek = function() {&#13;;	poprz = new Date(Date.parse(this.dataU))&#13;;	wiekR = teraz.getFullYear() - poprz.getFullYear()&#13;;	wiekM = teraz.getMonth() - poprz.getMonth()&#13;;	if (wiekM &lt; 0) {wiekM = wiekM+12; wiekR--}&#13;;	return [wiekR, wiekM] }&#13;;	}&#13;;	this.okrek = function() {&#13;;	rek = new Date(Date.parse(this.rekrutacja))&#13;;	rekR = teraz.getFullYear() - rek.getFullYear()&#13;;	rekM = teraz.getMonth() - rek.getMonth()&#13;;	if (rekM &lt; 0) {rekM = rekM+12; rekR--}&#13;;	return [rekR, rekM] }&#13;;	}</content>
+        <connect ID="7"/>
+      </block>
+      <block id="4" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-30.0"/>
+        <content>x=Read("");	;	</content>
+        <comment>x ;	</comment>
+        <connect ID="5"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="x"/>
+      </block>
+      <block id="5" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="30.0"/>
+        <content>y=Read("");	;	</content>
+        <comment>y ;	</comment>
+        <connect ID="6"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="y"/>
+      </block>
+      <block id="6" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="100.0"/>
+        <content>d=Read("");	;	</content>
+        <comment>d ;	</comment>
+        <connect ID="12"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="d"/>
+      </block>
+      <block id="7" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-90.0"/>
+        <content> </content>
+        <connect ID="4"/>
+      </block>
+      <block id="8" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="270.0"/>
+        <content>x.equals("koniec")</content>
+        <connect ID="9" value="true"/>
+        <connect ID="10" value="false"/>
+      </block>
+      <block id="9" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="410.0"/>
+        <content>for(i=0;i&lt;lista.length;i++) {&#13;;	Writeln(lista[i].imię +" "+lista[i].okWiek()+" "+lista[i].okrek())&#13;;	}</content>
+        <connect ID="2"/>
+      </block>
+      <block id="10" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="270.0" posY="270.0"/>
+        <content>Writeln(x +" "+ y)&#13;;	lista.push(new Klasa(x, y, d, r))</content>
+        <connect ID="11"/>
+      </block>
+      <block id="11" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="270.0" posY="-90.0"/>
+        <content> </content>
+        <connect ID="7"/>
+      </block>
+      <block id="12" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="170.0"/>
+        <content>r=Read("");	;	</content>
+        <comment>r ;	</comment>
+        <connect ID="8"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="r"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

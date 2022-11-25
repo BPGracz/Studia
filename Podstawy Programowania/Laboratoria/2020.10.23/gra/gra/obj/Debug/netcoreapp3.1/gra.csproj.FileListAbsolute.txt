@@ -1,0 +1,39 @@
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.exe
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.deps.json
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.json
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.dev.json
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.dll
+C:\Users\BPGracz\Desktop\VS\gra\gra\bin\Debug\netcoreapp3.1\gra.pdb
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfoInputs.cache
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfo.cs
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.csproj.CoreCompileInputs.cache
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.dll
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.pdb
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.genruntimeconfig.cache
+C:\Users\BPGracz\Desktop\VS\gra\gra\obj\Debug\netcoreapp3.1\gra.csprojAssemblyReference.cache
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.exe
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.deps.json
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.json
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.dev.json
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.dll
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\bin\Debug\netcoreapp3.1\gra.pdb
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.csprojAssemblyReference.cache
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfoInputs.cache
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfo.cs
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.csproj.CoreCompileInputs.cache
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.dll
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.pdb
+C:\Users\BPGracz\Desktop\VS 23.10.2020\gra\gra\obj\Debug\netcoreapp3.1\gra.genruntimeconfig.cache
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.exe
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.deps.json
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.json
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.runtimeconfig.dev.json
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.dll
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\bin\Debug\netcoreapp3.1\gra.pdb
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.csprojAssemblyReference.cache
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfoInputs.cache
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.AssemblyInfo.cs
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.csproj.CoreCompileInputs.cache
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.dll
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.pdb
+C:\Users\zurek\Desktop\Do dysku\Studia\I Rok\I Semestr\PP Laboratoria\2020.10.23\gra\gra\obj\Debug\netcoreapp3.1\gra.genruntimeconfig.cache

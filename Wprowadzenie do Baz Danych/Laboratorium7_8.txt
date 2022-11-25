@@ -1,0 +1,79 @@
+1.
+declare
+oldstan numeric(8,2);
+nazproduktu text;
+
+begin
+select into oldstan from produkty where idproduktu = NEW.idproduktu;
+select into nazproduktu nazwa from produkty where idproduktu = NEW.idproduktu;
+if NEW.ilosc > oldstan then
+    raise esception 'zabraklo towaru: %',nazwaproduktu;
+end if;
+return NEW;
+end;
+
+2.
+
+3.
+declare
+zaplacil numeric;
+begin
+SELECT INTO zaplacil SUM(ilosc*cena*(1+vat))
+FROM nagsprzedaz NATURAL JOIN pozsprzedaz
+NATURAL JOIN produkty
+WHERE idklienta=id_klienta AND datasp >= data_pocz AND datasp <= data_konc;
+Return zaplacil;
+End;
+
+a.
+SELECT klient_zaplacil('K01','2020-03-01','2021-03-31');
+
+b.
+SELECT idklienta, klient_zaplacil(idklienta,'2021-03-15','2021-03-31') FROM klienci;
+
+c.
+SELECT idklienta, miasto, klient_zaplacil(idklienta,'2021-01-01','2021-01-31') FROM klienci WHERE miasto = 'Gdynia';
+
+
+4.
+begin
+
+return netto*(1+vat);
+
+end;
+
+5.
+SELECT klienci.nazwa, nrfaktury, datasp, cena, vat, cena*(1+vat) AS brutto
+FROM klienci NATURAL JOIN nagsprzedaz NATURAL JOIN pozsprzedaz JOIN produkty USING (idproduktu)
+ORDER BY nrfaktury
+
+
+9.
+-- Zdefiniuj widok prodetal(idproduktu, nazproduktu, cena_brutto, stan). Wykorzystaj widok do:
+
+ SELECT produkty.idproduktu,
+    produkty.nazwa AS nazproduktu,
+    produkty.cena * (1::numeric + produkty.vat) AS cena_brutto,
+    produkty.stan
+   FROM produkty;
+
+-- a. policzenia należności klienta K03 za zakupy zrealizowane w pierwszej połowie stycznia
+
+SELECT SUM(cena_brutto) FROM prodetal NATURAL JOIN pozsprzedaz NATURAL JOIN nagsprzedaz 
+WHERE idklienta = 'K03' AND EXTRACT (MONTH FROM datasp) = 1 AND EXTRACT (DAY FROM datasp) < 16
+
+-- b. wskazania nazwy produktu z najwyższą ceną brutto
+
+SELECT nazproduktu FROM prodetal WHERE cena_brutto IN (SELECT MAX (cena_brutto) FROM prodetal)
+
+--11. Zdefiniuj funkcję serwerową srednia_producenta(nazproducenta) wyliczającą średnią cenę produktów
+--dostarczanych przez danego producenta. Wykorzystaj ją w zapytaniach:
+--a. podaj średnią cenę produktów Cersanita
+
+SELECT AVG(cena) AS srednia_cena FROM produkty WHERE producent = 'Cersanit'
+
+--b. podaj średnią cenę produktów u producentów dostarczających wiertarki (nazwa producenta, średnia cena jego
+--produktów)
+
+SELECT DISTINCT producent, srednia_producenta(producent) FROM produkty
+WHERE producent IN(SELECT producent FROM produkty WHERE nazwa LIKE'%iertarka%')

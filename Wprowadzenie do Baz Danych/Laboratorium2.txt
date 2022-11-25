@@ -1,0 +1,17 @@
+1.
+SELECT nazwa, adres, nagsprzedaz.* FROM klienci INNER JOIN nagsprzedaz ON klienci.idklienta = nagsprzedaz.idklienta LIMIT 7 
+
+2.
+SELECT nazwa, adres FROM klienci INNER JOIN nagsprzedaz ON klienci.idklienta = nagsprzedaz.idklienta WHERE EXTRACT(DAY FROM datasp) <= 5
+
+3.
+SELECT idproduktu FROM pozsprzedaz INNER JOIN nagsprzedaz ON pozsprzedaz.nrfaktury = nagsprzedaz.nrfaktury WHERE idklienta = 'K03' AND EXTRACT(DAY FROM datasp)>=25 AND EXTRACT(DAY FROM datasp)<=30
+
+4.
+SELECT klienci.nazwa, adres FROM klienci NATURAL JOIN nagsprzedaz NATURAL JOIN pozsprzedaz JOIN produkty USING (idproduktu) WHERE producent = 'Malfarb'
+
+5.
+SELECT klienci.nazwa, adres FROM klienci NATURAL JOIN nagsprzedaz NATURAL JOIN pozsprzedaz JOIN produkty USING (idproduktu) WHERE miasto IN ('Sopot', 'Gdańsk') AND miara IN ('metr', 'kg') AND cena > 40
+
+6.
+SELECT nazwa, producent FROM produkty WHERE idproduktu NOT IN (SELECT idproduktu FROM pozsprzedaz)

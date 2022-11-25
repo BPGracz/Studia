@@ -1,0 +1,19 @@
+1. podaj a
+2. podaj b
+3. podaj c
+4. y = ax^2 + bx + c
+5. delta = b^2-4ac
+6. x0 = -b/2a
+7. x1 = (-b - delta^1/2)/2a
+8. x2 = (-b + delta^1/2)/2a
+9. jeśli delta>0
+wykonaj x1, x2
+wyswietl x1, x2;
+10. jesli delta=0
+wykonaj x0
+wyświetl x0;
+11. jesli delta<0
+wykonaj delta*(-1)
+x1, x2;
+wyswielt x1+"i", x2+"i";
+

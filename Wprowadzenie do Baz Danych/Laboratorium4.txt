@@ -1,0 +1,18 @@
+ALTER TABLE public.nagsprzedaz
+    ADD PRIMARY KEY (nrfaktury);
+
+1.
+a.
+vat in (0, 0.05, 0.08, 0.23)
+
+b.
+miara in ('kg', 'litr', 'metr', 'szt', 'cm')
+
+c.
+zaplacono in ('tak','nie')
+
+d.
+idklienta IS NOT NULL OR zaplacono = 'Tak'
+
+e.
+producent != 'Stanley' AND vat = 0.23

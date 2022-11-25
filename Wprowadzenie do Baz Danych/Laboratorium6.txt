@@ -1,0 +1,58 @@
+1.
+SELECT stadnina_sp AS stadnina, adres_stadniny_sp AS adres_stadniny, dyrektor_stadniny_sp AS dyrektor_stadniny INTO stadniny FROM
+(SELECT stadnina_sp, adres_stadniny_sp, dyrektor_stadniny_sp 
+FROM aukcja
+UNION
+SELECT stadnina_kup, adres_stadniny_kup, dyrektor_stadniny_kup 
+FROM aukcja) stado;
+
+ALTER TABLE IF EXISTS public.stadniny
+	ADD PRIMARY KEY (stadnina);
+
+2.
+DROP TABLE konie;
+SELECT DISTINCT idkonia, ojciec, matka, rok_ur INTO konie FROM aukcja;
+
+DELETE FROM konie
+WHERE idkonia='Nagan' and rok_ur = 2014;
+
+ALTER TABLE IF EXISTS public.konie
+	ADD PRIMARY KEY (idkonia);
+
+3.
+SELECT lp, idkonia, stadnina_sp, data_sp, stadnina_kup, wartosc_sp INTO aukcje FROM aukcja;
+ALTER TABLE IF EXISTS public.aukcje
+    ADD CONSTRAINT "Stadnina_sp" FOREIGN KEY (stadnina_sp)
+    REFERENCES public.stadniny (stadnina) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_Stadnina_sp"
+    ON public.aukcje(stadnina_sp);
+	
+ALTER TABLE IF EXISTS public.aukcje
+    ADD CONSTRAINT "Stadnina_kup" FOREIGN KEY (stadnina_kup)
+    REFERENCES None (stadnina) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_Stadnina_kup"
+    ON public.aukcje(stadnina_kup);
+
+4.
+SELECT aukcje.lp,
+	konie.idkonia,
+	konie.ojciec,
+	konie.rok_ur,
+	aukcje.stadnina_sp,
+	stadniny.adres_stadniny AS stadnina_sp_adres,
+	stadniny.dyrektor_stadniny,
+	aukcje.data_sp
+	aukcje.stadnina_kup,
+	s.adres_stadniny AS stadnina_kup_adres,
+	s.dyrektor_stadniny AS dyrektor_stadniny_kup,
+	aukcje.wartosc_sp
+	FROM
+	JOIN konie USING (idkonia)
+	JOIN stadniny ON aukcje.stadnina_sp::text = stadinny.stadnina::text
+	JOIN stadniny s ON aukcje.stadnina_KUP::text = s.stadnina::text;

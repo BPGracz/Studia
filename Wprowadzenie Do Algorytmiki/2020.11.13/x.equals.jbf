@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="BPGracz" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="0.0" posY="0.0" zoom="4"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="30.0" posY="-320.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="30.0" posY="240.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="30.0" posY="-220.0"/>
+        <content>lista = []&#13;;	function Klasa(x,y)&#13;;	{this.imie = x &#13;;	this.nazwisko = y}</content>
+        <connect ID="10"/>
+      </block>
+      <block id="4" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="30.0" posY="-100.0"/>
+        <content>x=Read("");	;	</content>
+        <comment>x ;	</comment>
+        <connect ID="5"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="x"/>
+      </block>
+      <block id="5" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="30.0" posY="-40.0"/>
+        <content>y=Read("");	;	</content>
+        <comment>y ;	</comment>
+        <connect ID="6"/>
+        <io array="0" inputType="1" ioType="2" message="" variable="y"/>
+      </block>
+      <block id="6" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="30.0" posY="40.0"/>
+        <content>x.equals("koniec")</content>
+        <connect ID="7" value="true"/>
+        <connect ID="8" value="false"/>
+      </block>
+      <block id="7" type="IO">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="30.0" posY="160.0"/>
+        <content>Writeln("Długość listy =" + (getValueOf(+lista.length)));	;	</content>
+        <comment>"Długość listy =" ++lista.length</comment>
+        <connect ID="2"/>
+        <io ioType="1" message="Długość listy =" messageSuffix="" newLine="true" variable="+lista.length"/>
+      </block>
+      <block id="8" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="270.0" posY="40.0"/>
+        <content>Writeln(x + + y)&#13;;	lista.push(new Klasa(x, y))</content>
+        <connect ID="9"/>
+      </block>
+      <block id="9" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="270.0" posY="-150.0"/>
+        <content> </content>
+        <connect ID="10"/>
+      </block>
+      <block id="10" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="30.0" posY="-150.0"/>
+        <content> </content>
+        <connect ID="4"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: mariadb106.server754863.nazwa.pl:3306
+-- Wersja serwera: 10.6.7-MariaDB-log
+-- Wersja PHP: 7.2.24-0ubuntu0.18.04.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Baza danych: `server754863`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `bdp_klienci`
+--
+
+CREATE TABLE `bdp_klienci` (
+  `id_klienta` int(11) NOT NULL,
+  `imie` varchar(20) NOT NULL,
+  `nazwisko` varchar(30) NOT NULL,
+  `adres` varchar(50) NOT NULL,
+  `telefon` int(11) NOT NULL,
+  `id_placowki` int(11) NOT NULL,
+  `miasto` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin2;
+
+--
+-- Zrzut danych tabeli `bdp_klienci`
+--
+
+INSERT INTO `bdp_klienci` (`id_klienta`, `imie`, `nazwisko`, `adres`, `telefon`, `id_placowki`, `miasto`) VALUES
+(1, 'Tadeusz', 'Lorkowski', 'Winieckiego 4', 792092832, 1, 'Sopoćkowo'),
+(2, 'Jan', 'Cewnik', 'Boczna 1', 111111111, 2, 'Sopoćkowo'),
+(3, 'Janusz', 'Tlenowy', 'Boczna 2', 111111112, 1, 'Sopoćkowo'),
+(4, 'Adam', 'Krewka', 'Boczna 3', 111111113, 2, 'Sopoćkowo'),
+(5, 'Waldemar', 'Respirator', 'Boczna 4', 111111115, 1, 'Sopot');
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
+--
+-- Indeksy dla tabeli `bdp_klienci`
+--
+ALTER TABLE `bdp_klienci`
+  ADD PRIMARY KEY (`id_klienta`),
+  ADD KEY `id_placowki` (`id_placowki`);
+
+--
+-- AUTO_INCREMENT dla zrzuconych tabel
+--
+
+--
+-- AUTO_INCREMENT dla tabeli `bdp_klienci`
+--
+ALTER TABLE `bdp_klienci`
+  MODIFY `id_klienta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Ograniczenia dla zrzutów tabel
+--
+
+--
+-- Ograniczenia dla tabeli `bdp_klienci`
+--
+ALTER TABLE `bdp_klienci`
+  ADD CONSTRAINT `bdp_klienci_ibfk_1` FOREIGN KEY (`id_placowki`) REFERENCES `bdp_placowki` (`id_placowki`);
+COMMIT;

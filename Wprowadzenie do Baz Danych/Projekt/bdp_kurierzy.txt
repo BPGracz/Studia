@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: mariadb106.server754863.nazwa.pl:3306
+-- Wersja serwera: 10.6.7-MariaDB-log
+-- Wersja PHP: 7.2.24-0ubuntu0.18.04.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Baza danych: `server754863`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `bdp_kurierzy`
+--
+
+CREATE TABLE `bdp_kurierzy` (
+  `id_kuriera` int(11) NOT NULL,
+  `imie` varchar(20) NOT NULL,
+  `nazwisko` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin2;
+
+--
+-- Zrzut danych tabeli `bdp_kurierzy`
+--
+
+INSERT INTO `bdp_kurierzy` (`id_kuriera`, `imie`, `nazwisko`) VALUES
+(1, 'Piotr', 'Wenflon');
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
+--
+-- Indeksy dla tabeli `bdp_kurierzy`
+--
+ALTER TABLE `bdp_kurierzy`
+  ADD PRIMARY KEY (`id_kuriera`);
+
+--
+-- AUTO_INCREMENT dla zrzuconych tabel
+--
+
+--
+-- AUTO_INCREMENT dla tabeli `bdp_kurierzy`
+--
+ALTER TABLE `bdp_kurierzy`
+  MODIFY `id_kuriera` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;

@@ -1,0 +1,13 @@
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.exe
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.deps.json
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.runtimeconfig.json
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.runtimeconfig.dev.json
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.dll
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\bin\Debug\netcoreapp3.1\Zad1.pdb
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.csprojAssemblyReference.cache
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.AssemblyInfoInputs.cache
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.AssemblyInfo.cs
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.csproj.CoreCompileInputs.cache
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.dll
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.pdb
+C:\Users\BPGracz\Desktop\VS 11.12.2020\Zad1\Zad1\Zad1\obj\Debug\netcoreapp3.1\Zad1.genruntimeconfig.cache

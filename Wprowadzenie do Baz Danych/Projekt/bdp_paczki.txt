@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: mariadb106.server754863.nazwa.pl:3306
+-- Wersja serwera: 10.6.7-MariaDB-log
+-- Wersja PHP: 7.2.24-0ubuntu0.18.04.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Baza danych: `server754863`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `bdp_paczki`
+--
+
+CREATE TABLE `bdp_paczki` (
+  `id_paczki` int(11) NOT NULL,
+  `id_odbiorcy` int(11) NOT NULL,
+  `id_nadawcy` int(11) NOT NULL,
+  `id_kuriera` int(11) NOT NULL,
+  `id_placowki` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin2;
+
+--
+-- Zrzut danych tabeli `bdp_paczki`
+--
+
+INSERT INTO `bdp_paczki` (`id_paczki`, `id_odbiorcy`, `id_nadawcy`, `id_kuriera`, `id_placowki`) VALUES
+(1, 1, 1, 1, 1),
+(2, 1, 1, 1, 1),
+(3, 1, 2, 1, 1);
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
+--
+-- Indeksy dla tabeli `bdp_paczki`
+--
+ALTER TABLE `bdp_paczki`
+  ADD PRIMARY KEY (`id_paczki`),
+  ADD KEY `id_nadawcy` (`id_nadawcy`),
+  ADD KEY `id_odbiorcy` (`id_odbiorcy`),
+  ADD KEY `id_kuriera` (`id_kuriera`),
+  ADD KEY `id_placowki` (`id_placowki`);
+
+--
+-- AUTO_INCREMENT dla zrzuconych tabel
+--
+
+--
+-- AUTO_INCREMENT dla tabeli `bdp_paczki`
+--
+ALTER TABLE `bdp_paczki`
+  MODIFY `id_paczki` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Ograniczenia dla zrzutów tabel
+--
+
+--
+-- Ograniczenia dla tabeli `bdp_paczki`
+--
+ALTER TABLE `bdp_paczki`
+  ADD CONSTRAINT `bdp_paczki_ibfk_1` FOREIGN KEY (`id_nadawcy`) REFERENCES `bdp_klienci` (`id_klienta`),
+  ADD CONSTRAINT `bdp_paczki_ibfk_2` FOREIGN KEY (`id_odbiorcy`) REFERENCES `bdp_klienci` (`id_klienta`),
+  ADD CONSTRAINT `bdp_paczki_ibfk_4` FOREIGN KEY (`id_kuriera`) REFERENCES `bdp_kurierzy` (`id_kuriera`),
+  ADD CONSTRAINT `bdp_paczki_ibfk_5` FOREIGN KEY (`id_placowki`) REFERENCES `bdp_placowki` (`id_placowki`);
+COMMIT;

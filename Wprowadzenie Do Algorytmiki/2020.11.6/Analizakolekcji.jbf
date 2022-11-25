@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="BPGracz" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="200" posX="-293.65363" posY="-120.45569" zoom="5"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-280.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="600.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-150.0"/>
+        <content>var lista = [2,4,"Ala",10,"ma",3,"koty",true,false];	suma = 0;	a = 0;	b = 0;	wartosc = 0;	var napis = [];	i = 0</content>
+        <connect ID="6"/>
+      </block>
+      <block id="4" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="280.0"/>
+        <content>lista.length &gt; i</content>
+        <connect ID="8" value="true"/>
+        <connect ID="18" value="false"/>
+      </block>
+      <block id="5" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="730.0" posY="60.0"/>
+        <content>i += 1</content>
+        <connect ID="10"/>
+      </block>
+      <block id="6" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="-10.0"/>
+        <content> </content>
+        <connect ID="4"/>
+      </block>
+      <block id="7" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="500.0" posY="280.0"/>
+        <content>typ == "number"</content>
+        <connect ID="13" value="true"/>
+        <connect ID="9" value="false"/>
+      </block>
+      <block id="8" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="250.0" posY="280.0"/>
+        <content>typ = typeof(lista[i])</content>
+        <connect ID="7"/>
+      </block>
+      <block id="9" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="730.0" posY="280.0"/>
+        <content>typ == "string"</content>
+        <connect ID="5" value="true"/>
+        <connect ID="11" value="false"/>
+      </block>
+      <block id="10" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="730.0" posY="-10.0"/>
+        <content> </content>
+        <connect ID="6"/>
+      </block>
+      <block id="11" type="DECISION">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="950.0" posY="280.0"/>
+        <content>typ == "boolean"</content>
+        <connect ID="16" value="true"/>
+        <connect ID="19" value="false"/>
+      </block>
+      <block id="12" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="950.0" posY="60.0"/>
+        <content> </content>
+        <connect ID="5"/>
+      </block>
+      <block id="13" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="500.0" posY="160.0"/>
+        <content>suma+=lista[i]</content>
+        <connect ID="15"/>
+      </block>
+      <block id="14" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="730.0" posY="160.0"/>
+        <content>napis[j] = lista[i]&#13;;	j++</content>
+      </block>
+      <block id="15" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="500.0" posY="60.0"/>
+        <content> </content>
+        <connect ID="5"/>
+      </block>
+      <block id="16" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="950.0" posY="160.0"/>
+        <content>wartosc++</content>
+        <connect ID="12"/>
+      </block>
+      <block id="18" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="0.0" posY="440.0"/>
+        <content>Writeln("Suma wszystkich wartości: " + suma);	Writeln("Powstały napis: " + napis);	Writeln("Prawda czy fałsz: " + wartosc)</content>
+        <connect ID="2"/>
+      </block>
+      <block id="19" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="1080.0" posY="280.0"/>
+        <content> </content>
+        <connect ID="20"/>
+      </block>
+      <block id="20" type="JUMP">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="1080.0" posY="60.0"/>
+        <content> </content>
+        <connect ID="12"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

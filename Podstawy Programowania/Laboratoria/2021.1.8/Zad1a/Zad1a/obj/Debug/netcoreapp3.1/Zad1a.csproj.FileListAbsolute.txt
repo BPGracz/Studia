@@ -1,0 +1,13 @@
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.exe
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.deps.json
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.runtimeconfig.json
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.runtimeconfig.dev.json
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.dll
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\bin\Debug\netcoreapp3.1\Zad1a.pdb
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.csprojAssemblyReference.cache
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.AssemblyInfoInputs.cache
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.AssemblyInfo.cs
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.csproj.CoreCompileInputs.cache
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.dll
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.pdb
+C:\Users\BPGracz\Desktop\15.1.2021\Zad1a\Zad1a\obj\Debug\netcoreapp3.1\Zad1a.genruntimeconfig.cache
