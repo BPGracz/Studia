@@ -2,7 +2,7 @@
 
 # Studia
 
-Wybrane materiały i prace z czasów mojej edukacji na studiach informatycznych.
+Wybrane materiały i prace z czasów mojej edukacji na studiach informatycznych na Uniwersytecie Morskim w Gdyni.
 
 ---
 
@@ -10,4 +10,4 @@ Wybrane materiały i prace z czasów mojej edukacji na studiach informatycznych.
 
 # Study
 
-Selected materials and papers from my education in computer science studies.
+Selected materials and papers from my education as a computer science student at Gdynia Maritime University.
